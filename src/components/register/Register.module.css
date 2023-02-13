@@ -1,0 +1,181 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5f5;
+}
+.cardContainer .card {
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 1em;
+  margin: 2em;
+  box-shadow: rgb(0 0 0 / 10%) 0px 5.6px 13.6px 0px;
+  padding: 1.5em;
+}
+.cardContainer .card h3 {
+  padding: 1em 0 0.5em 0;
+}
+.cardContainer .card p {
+  color: rgb(97, 100, 117);
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.infoContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 2em ;
+}
+.infoContainer .textBox h2 {
+  color: #404040;
+  padding: 0.7em 0;
+}
+.infoContainer .textBox p,
+.box p{
+  color: #5a4f46;
+  padding: 0.3em 0;
+  font-size: 0.95em;
+  line-height: 2em;
+}
+.box {
+  border: 1px solid #e2e3e4;
+  border-radius: 1em;
+  padding: 2em 3em;
+  background-color: #fff;
+  width: 80%;
+  margin: 2em auto;
+}
+.box h3 {
+  text-align: center;
+  color: #404040;
+  font-size: 1.35em;
+  margin: 1em 0;
+}
+.inputContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5em 0;
+}
+.inputContainer .inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.inputContainer .inputGroup h2 {
+  color: #404040;
+  font-size: 1.35em;
+  padding: 1em 0;
+}
+.inputContainer .inputGroup span {
+  color: #5a4f46;
+  font-size: 0.88em;
+}
+.inputContainer .inputGroup input {
+  border: 1px solid #e2e3e4;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 1.5em 0;
+  font-family: IRANSansXRegular;
+  font-size: 0.8em;
+  color: #5a4f46;
+}
+.inputContainer .inputGroup input:focus {
+  outline: none;
+}
+.inputContainer .inputGroup button {
+  border: none;
+  border-radius: 0.5em;
+  color: #fff;
+  background-color: #a3a3a3;
+  font-size: 0.9em;
+  padding: 0.8em 0;
+  cursor: pointer;
+  font-family: IRANSansXRegular;
+  margin: 1.5em 0;
+}
+.inputContainer .imgContainer {
+  width: 30%;
+}
+.inputContainer .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 870px) {
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+  .cardContainer .card {
+    width: 95%;
+    margin: 1em;
+  }
+  .infoContainer {
+    flex-direction: column-reverse;
+  }
+  .inputContainer {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding: 0 4em;
+    margin: 3em 0;
+  }
+  .inputContainer .inputGroup {
+    width: 95%;
+  }
+  .inputContainer .imgContainer {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cardContainer .card {
+    height: 230px;
+  }
+  .cardContainer .card h3 {
+    font-size: 0.9em;
+  }
+  .cardContainer .card p {
+    font-size: 0.7em;
+  }
+  .infoContainer .img{
+    width: 75%;
+  }
+  .infoContainer .img img{
+    width: 100%;
+    height: 100%;
+  }
+  .infoContainer .textBox h2 {
+    font-size: 1.1em;
+  }
+  .infoContainer .textBox p,
+  .box p {
+    font-size: 0.9em;
+  }
+  .box {
+    padding: 1.5em ;
+    width: 85%;
+  }
+  .box h3{
+    font-size: 1.1em;
+    margin: 0.5em 0;
+  }
+  .inputContainer{
+    padding: 0 1.5em;
+  }
+  .inputContainer .inputGroup h2 {
+    font-size: 1.05em;
+  }
+  .inputContainer .inputGroup span {
+    font-size: 0.75em;
+  }
+  .inputContainer .inputGroup input {
+    font-size: 0.75em;
+  }
+  .inputContainer .inputGroup button {
+    font-size: 0.75em;
+  }
+  .inputContainer .imgContainer {
+    width: 55%;
+  }
+}

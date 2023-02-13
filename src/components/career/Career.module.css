@@ -1,0 +1,107 @@
+.careerContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 0;
+}
+.careerContainer .aboutContainer{
+    background-color: #f5f5f5;
+    padding: 3em 5em;
+    text-align: center;
+}
+.careerContainer .titleText{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 3em 0;
+}
+.careerContainer .titleText h1 , .careerContainer .aboutContainer h1{
+    color: #404b58;
+}
+.careerContainer .titleText span{
+    font-weight: 600;
+}
+.careerContainer .itemContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.careerContainer .itemContainer .item{
+  cursor: pointer;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+}
+.careerContainer .itemContainer .active{
+    cursor: pointer;
+    padding: 0.5em 1.2em;
+    font-weight: 600;
+    color: #00e261;
+    border-bottom: 3px solid #00e261;
+}
+.careerContainer .cardContainer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4em 0;
+}
+.careerContainer .cardContainer .card{
+    border: 1px solid #a3a3a3;
+    border-radius: 0.4em;
+    padding: 2em 1.5em;
+    width: 40%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1em;
+}
+.careerContainer .cardContainer .card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.careerContainer .cardContainer .card .category{
+    border-radius: 0.3em;
+    background-color: #e6f0f6;
+    color: #00e261;
+    padding: 0.25em 0.7em;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+.careerContainer .cardContainer .card .text .lightText{
+    color: #00e261;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+.careerContainer .cardContainer .card:hover .text .lightText , .careerContainer .cardContainer .card:hover{
+    background-color: #00e261;
+    color: #fff;
+}
+
+@media only screen and (max-width:1000px){
+    .careerContainer .cardContainer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .careerContainer .cardContainer .card{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .careerContainer .cardContainer .card .category{
+        margin-top: 1em;
+    }
+    .careerContainer .cardContainer .card{
+        margin: 1em 0.5em;
+        flex-direction: column-reverse;
+    }
+    .careerContainer .aboutContainer{
+        padding: 3em ;
+    }
+}

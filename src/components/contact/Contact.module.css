@@ -1,0 +1,101 @@
+.contactContainer{
+    display: flex;
+    justify-content: center;
+}
+.citiesContainer{
+    width: 60%;
+    border-radius: 0.5em;
+    background-color: #fff;
+    padding: 2em;
+    margin: 2em 1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.citiesContainer .inputGroup{
+    display: flex;
+    position: relative;
+}
+.citiesContainer .inputGroup input {
+    border: none;
+    background-color: #e8e8e8;
+    width: 100%;
+    padding: 0.7em 3em;
+    border-radius: 0.5em;
+    font-family: IRANSansXRegular;
+    color: #454545;
+}
+.citiesContainer .inputGroup input:focus {
+    outline: none;
+}
+.citiesContainer .inputGroup img{
+    position: absolute;
+    right: 0.8em;
+    top: 30%;
+}
+.citiesContainer .cityCard{
+    margin: 1.5em 0;
+    color: #454545;
+}
+.citiesContainer .cityCard p{
+    padding-top: 0.5em;
+    font-size: 0.9em;
+}
+.infoContainer{
+    width: 28%;
+    height: 450px;
+    border-radius: 0.5em;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2em 1em;
+    padding: 0.5em 2em;
+}
+.infoContainer h4{
+   color: #40dc93;
+   text-align: center;
+   margin: 1em 0;
+}
+.infoContainer p{
+    color: #7b7b7b;
+    text-align: center;
+    padding: 0.2em 0;
+    font-size: 0.93em;
+}
+
+@media only screen and (max-width : 1000px){
+    .citiesContainer{
+        width: 55%;
+    }
+    .infoContainer{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width : 870px){
+    .contactContainer{
+        flex-direction: column;
+    }
+    .citiesContainer{
+        width: 97%;
+        margin: 1em auto; 
+    }
+    .infoContainer{
+        width: 97%;
+        margin: 1em auto; 
+        height: 410px;
+    }
+}
+
+@media only screen and (max-width : 500px){
+    .citiesContainer .cityCard{
+        font-size: 0.83em;
+    }
+    .infoContainer p{
+        font-size: 0.8em;
+    }
+    .infoContainer h4{
+        font-size: 0.88em;
+    }
+    .infoContainer {
+        height: 385px;
+    }
+}
+

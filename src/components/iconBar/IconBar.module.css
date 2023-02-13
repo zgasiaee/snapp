@@ -1,0 +1,27 @@
+.iconContainer {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  flex-wrap: wrap;
+  padding-bottom: 3em;
+}
+.iconContainer .iconItem {
+  height: 45px;
+  width: 160px;
+  border-radius: 0.4em;
+  cursor: pointer;
+  margin: 0 2em;
+  margin-top: 4.5em;
+}
+.iconContainer .iconItem img {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width:870px){
+  .iconContainer{
+    display: none;
+  }
+}

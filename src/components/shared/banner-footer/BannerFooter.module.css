@@ -1,0 +1,48 @@
+.imageContainer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 100%; 
+  content-visibility: auto;
+  width: 100%;
+  min-height: 60vh;
+  padding-bottom: 1.5em;
+}
+.imageContainer .dataContainer {
+  padding: 3em 8em;
+  padding-bottom: 0;
+  color: #fff;
+  width: 70%;
+}
+.imageContainer .dataContainer img {
+  width: 60px;
+  margin-bottom: 0.5em;
+}
+.imageContainer .dataContainer h3 {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+.imageContainer .dataContainer p {
+  line-height: 1.8em;
+  font-size: 0.95em;
+  text-shadow: #000 1px 0 10px;
+}
+.imageContainer .dataContainer button {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #444140;
+  border-radius: 0.5em;
+  padding: 0.85em 2em;
+  font-family: IRANSansXRegular;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-top: 3em;
+}
+
+@media only screen and (max-width: 870px) {
+  .imageContainer .dataContainer {
+    padding: 2em;
+    width: 100%;
+  }
+}

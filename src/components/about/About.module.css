@@ -1,0 +1,26 @@
+.AboutContainer{
+    background-color: #fff;
+    padding: 1em 0;
+}
+.AboutContainer .title{
+    color: #22d37d;
+    text-align: center;
+    margin: 1em 0;
+}
+.AboutContainer .imgContainer{
+    width: 30%;
+    margin: 1em auto;
+}
+.AboutContainer .imgContainer img{
+    width:100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:500px){
+    .AboutContainer .title{
+        font-size: 0.8em;
+    }
+    .AboutContainer .imgContainer{
+        width: 50%;
+    }
+}

@@ -1,0 +1,133 @@
+.imgContainer {
+  height: 100%;
+  width: 55%;
+}
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+.textContainer {
+  width: 45%;
+  height: 100%;
+  padding-right: 10em;
+  padding-left: 3em;
+}
+.textContainer .buttonContainer{
+ display: flex;
+ background-color: red;
+}
+.textContainer .title {
+  font-size: 2em;
+  margin: 0.6em 0;
+}
+.textContainer .normalText {
+  font-size: 0.95em;
+  line-height: 1.7em;
+}
+.textContainer .inputGroup {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+}
+.textContainer .inputGroup input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0.8em 0.5em;
+  color: #aadfbf;
+}
+.textContainer .inputGroup input::placeholder {
+  color: #aadfbf;
+  font-family: IRANSansXRegular;
+}
+.textContainer .inputGroup input:focus {
+  outline: none;
+}
+.textContainer .inputGroup .button {
+  background-color: #fff;
+  color: #06d170;
+  border: none;
+  border-radius: 0.4em;
+  padding: 0.7em 2em;
+  font-family: IRANSansXBold;
+  cursor: pointer;
+  margin-right: 3em;
+}
+.textContainer .submit {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.4em;
+  padding: 0.7em 3em;
+  font-family: IRANSansXBold;
+  font-size: 1em;
+  cursor: pointer;
+}
+.textContainer .submit:hover {
+  background-color: #32b065;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1250px) {
+  .textContainer .title {
+    font-size: 1.7em;
+  }
+  .textContainer .normalText {
+    font-size: 0.88em;
+  }
+  .textContainer .inputGroup .button {
+    padding: 0.7em 1.4em;
+    margin-right: 1.5em;
+    font-size: 0.74em;
+  }
+  .textContainer {
+    padding-right: 5em;
+    padding-left: 2em;
+  }
+  .textContainer .submit {
+    padding: 0.7em 3em;
+    font-size: 0.9em;
+  }
+  .textContainer .buttonContainer{
+     flex-direction: column;
+     margin: 0;
+     padding: 0;
+   }
+}
+
+@media only screen and (max-width: 870px) {
+  .textContainer {
+    width: 100%;
+    padding: 1em 2.5em;
+  }
+  .textContainer .inputGroup {
+    display: none;
+  }
+  .textContainer .submit {
+    background-color: #fff;
+    color: #404040;
+    padding: 0.7em 3em;
+    font-size: 0.98em;
+    width: 100%;
+  }
+  .imgContainer {
+    width: 100%;
+    padding-top: 13em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .textContainer .title {
+    font-size: 1.5em;
+  }
+  .textContainer .normalText {
+    font-size: 0.8em;
+  }
+  .textContainer .submit {
+    font-size: 0.85em;
+  }
+  .imgContainer {
+    width: 100%;
+    padding-top: 5em;
+  }
+}

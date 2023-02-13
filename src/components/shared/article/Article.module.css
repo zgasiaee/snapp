@@ -1,0 +1,44 @@
+.articleContainer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+}
+.articleContainer .title{
+    color: #404143;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+}
+.articleContainer .iconContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.articleContainer .iconContainer li {
+   list-style-type: none;
+}
+.articleContainer .iconContainer img{
+    margin: 0 2.8em;
+    width: 50px;
+}
+.articleContainer .text{
+    width: 75%;
+    font-size: 0.9em;
+    color: #686d62;
+    margin: 1.5em 0;
+    line-height: 1.9em;
+}
+.articleContainer .textBox{
+    width: 75%;
+    border-radius: 0.6em;
+    padding: 1em;
+}
+.articleContainer .textBox .titleText{
+   color : #3f3f49;
+   font-size: 1.1em;
+}
+.articleContainer .textBox .text{
+    width: 100%;
+}
+

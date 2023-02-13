@@ -1,0 +1,105 @@
+.bannerContainer {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #fff;
+  padding: 3em 0;
+}
+.bannerContainer .textContainer {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+}
+.bannerContainer .textContainer .imgBox {
+  width: 45%;
+}
+.bannerContainer .textContainer .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.bannerContainer .textContainer .textBox {
+  width: 55%;
+  color: #474f56;
+  padding: 1.5em 3em 2em 5em;
+}
+.bannerContainer .textContainer .textBox .title {
+  font-size: 1.4em;
+  margin-bottom: 1.3em;
+}
+.bannerContainer .textContainer .textBox .text {
+  font-size: 0.88em;
+  line-height: 1.8em;
+}
+.bannerContainer .cardContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bannerContainer .cardContainer .card {
+  width: 270px;
+  height: 350px;
+  border-radius: 1em;
+  margin: 0 2em;
+  margin-top: -4em;
+}
+.bannerContainer .cardContainer .card .img {
+  width: 100%;
+  height: 170px;
+  background-color: #f5f5f5;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerContainer .cardContainer .card .img img {
+  width: 85%;
+  height: 85%;
+}
+.bannerContainer .cardContainer .card .texts h4{
+    color: #474f56;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+.bannerContainer .cardContainer .card .texts p{
+    font-size: 0.76em;
+    line-height: 1.6em;
+}
+
+@media only screen and (max-width:870px){
+  .bannerContainer {
+    padding: 0;
+  }
+  .bannerContainer .textContainer {
+    flex-direction: column;
+  }
+  .bannerContainer .textContainer .imgBox {
+    width: 100%;
+  }
+  .bannerContainer .textContainer .textBox {
+    width: 100%;
+    padding: 2em;
+  }
+  .bannerContainer .cardContainer {
+    flex-wrap: wrap;
+  }
+  .bannerContainer .cardContainer .card {
+    margin: 1.5em;
+  }
+}
+
+@media only screen and (max-width:640px){
+  .bannerContainer .cardContainer .card {
+    width: 100%;
+    margin: 0 2em;
+  }
+  .bannerContainer .cardContainer .card .img {
+    height: 200px;
+  }
+  .bannerContainer .cardContainer .card .img img {
+    width: 65%;
+    height: 75%;
+  }
+  .bannerContainer .textContainer .textBox .title {
+    font-size: 1.15em;
+  }
+}
+

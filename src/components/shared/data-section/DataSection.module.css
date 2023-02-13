@@ -1,0 +1,25 @@
+.dataContainer {
+  background-color: #fff;
+  padding: 3em 0;
+}
+.dataBox {
+  width: 67%;
+  background-color: #fffbec;
+  color: #404040;
+  border-radius: 0.8em;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.dataBox h4 {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.dataBox p {
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .dataBox {
+    width: 85%;
+  }
+}

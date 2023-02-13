@@ -1,0 +1,93 @@
+.VideoSectionContainer{
+    background-color: #f5f5f5;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.VideoSectionContainer h1{
+    color: #404040;
+    margin-top: 1em;
+    margin-bottom: 0.65em;
+}
+.VideoSectionContainer .button{
+    border: none;
+    background-color: #00d170;
+    color: #fff;
+    padding: 0.7em 2em;
+    border-radius: 0.4em;
+    font-family: IRANSansXBold;
+    font-size: 1em;
+    margin: 2em 0;
+    text-decoration: none;
+}
+.VideoSectionContainer video{
+    width: 70%;
+}
+.VideoSectionContainer .cardContainer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; 
+   margin-top: 4em;
+   margin-bottom: 2em;
+}
+.VideoSectionContainer .cardContainer .card{
+   background-color: #fff;
+   border-radius: 1em;
+   width: 540px;
+   min-height: 200px;
+   display: flex;
+   padding: 1em ;
+   padding-left: 2.3em;
+   margin: 1em;
+}
+.VideoSectionContainer .cardContainer .card .imgcontainer{
+   display: flex;
+   align-items: center;
+}
+.VideoSectionContainer .cardContainer .card .textContainer h4{
+  color: #424040;
+  margin: 1em 0;
+}
+.VideoSectionContainer .cardContainer .card .textContainer p{
+    font-size: 0.87em;
+}
+
+@media only screen and (max-width:870px){
+    .VideoSectionContainer{
+        padding-top: 2em;
+    }
+    .VideoSectionContainer h1{
+        font-size: 1.4em;
+        margin-top: 0;
+        text-align: center;
+        padding: 0 1em;
+    }
+    .VideoSectionContainer p{
+        font-size: 0.85em;
+        text-align: center;
+        padding: 0 1em;
+    }
+    .VideoSectionContainer video{
+        width: 90%;
+    }
+    .VideoSectionContainer .cardContainer .card{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .VideoSectionContainer h1{
+        font-size: 1.1em;
+    }
+    .VideoSectionContainer p{
+        font-size: 0.8em;
+    }
+    .VideoSectionContainer video{
+        width: 95%;
+    }
+}
